@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小米手机5</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/view.css">
+    <script src="jquery-2.2.3.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <div class="left">
+            <a href="首页.html">
+                <img src="images/icon_back_n.png" alt="">
+            </a>
+        </div>
+        <div class="search">
+            <a href="search.html">
+                <img src="images/search.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="images/T5-1.jpg" alt="">
+    </div>
+    <div class="name">
+        <p>小米手机5 标准版 3GB + 32GB / 3D玻璃<br><span><strong>1999</strong>元</span></p>
+        <img src="images/fenxiang.png" alt="">
+    </div>
+    <p><span>【下周二早10点开售】</span>骁龙820处理器 / UFS 2.0 闪存 / 4轴防抖相机 / 16颗灯省电高亮屏幕 / 全功能NFC / 4G+ 网络</p>
+    <div class="lis-color">
+        <ul>
+            <li>白色</li>
+            <li>黑色</li>
+            <li>金色</li>
+            <li>淡紫色</li>
+            <div class="clr"></div>
+        </ul>
+    </div>
+    <div class="rec">
+        <p>为你推荐</p>
+        <div class="list-img">
+            <a href=""><img src="images/T-vl-1.jpg" alt=""></a>
+            <a href=""><img src="images/T-vl-2.jpg" alt=""></a>
+            <a href=""><img src="images/T-vl-3.jpg" alt=""></a>
+            <a href=""><img src="images/T-vl-4.jpg"></a>
+        </div>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><p>概述</p></li>
+            <li><p>图集</p></li>
+            <li><p>参数</p></li>
+            <li><p>意外保</p></li>
+        </ul>
+    </div>
+    <div class="b-img">
+        <img src="images/T-vb-1.jpg" alt="">
+        <img src="images/T-vb-2.jpg" alt="">
+        <img src="images/T-vb-3.jpg" alt="">
+        <img src="images/T-vb-4.jpg" alt="">
+        <img src="images/T-vb-5.jpg" alt="">
+        <img src="images/T-vb-6.jpg" alt="">
+        <img src="images/T-vb-7.jpg" alt="">
+        <img src="images/T-vb-8.jpg" alt="">
+    </div>
+    <div class="footer">
+        <a href="首页.html"><img src="images/shouye.png" alt=""></a>
+        <p>暂时缺货</p>
+        <a href="cart.html"><img src="images/gw.png" alt=""></a>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    $(function(){
+        function fullwidth(){
+            if($('body').width() >= 720){
+                $('html').css('font-size', 100 + 'px');
+                return;
+            }
+            var scale = $('body').width() / 720;
+            $('html').css('font-size',scale * 100 + 'px');
+        }
+        fullwidth();
+        $(window).resize(function(){
+            fullwidth();
+        })
+    });
+</script>

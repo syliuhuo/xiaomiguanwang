@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/cart.css">
+    <script src="jquery-2.2.3.js"></script>
+</head>
+<body>
+<div class="header">
+    <div class="left">
+        <a href="">
+            <img src="images/icon_back_n.png" alt="">
+        </a>
+    </div>
+    <p>购物车</p>
+    <div class="right">
+        <a href="">
+            <img src="images/search.png" alt="">
+        </a>
+    </div>
+</div>
+<div class="list">
+    <section>
+        <div class="img">
+            <a href="#"><img src="images/T1-1.png"></a>
+        </div>
+        <div class="info">
+            <h2>小米电视3 55英寸</h2>
+            <p>售价：3999元 合计：3999元</p>
+            <p><span><a href="">-</a></span><strong>1</strong><span><a href="">+</a></span><img src="images/shanchu.png"></p>
+        </div>
+    </section>
+    <div class="other">
+        <a href="">
+            <p><img src="images/tap.png" alt=""><span>预约电视挂架安装 服务</span> <strong>预约服务</strong></p>
+        </a>
+    </div>
+    <section>
+        <div class="img">
+            <img src="images/T1-2.jpg">
+        </div>
+        <div class="info">
+            <h2>红米Note 3 双网通版 深灰 16GB</h2>
+            <p>售价：899元 合计：899元</p>
+            <p><span><a href="">-</a></span><strong>1</strong><span><a href="">+</a></span><img src="images/shanchu.png"></p>
+        </div>
+    </section>
+    <div class="other">
+        <a href="">
+            <p><img src="images/insurance.png"><span>意外保障服务 红米Note3 59元/年</span><strong>预约服务</strong></p>
+        </a>
+    </div>
+</div>
+<p> 温馨提示：产品是否购买成功，以最终下单为准，请尽快结算</p>
+<div class="kong"></div>
+<form action="" method="">
+    <div>
+        <input type="checkbox" value="" name="price"> <span><strong>+699</strong>元的小米路由器2（1T）</span>
+        <p>&gt;</p>
+    </div>
+    <div>
+        <input type="checkbox" value="" name="price"> <span><strong>+79</strong>元得小米路由器青春版</span>
+        <p>&gt;</p>
+    </div>
+    <div>
+        <input type="checkbox" value="" name="price"> <span><strong>+45</strong>元得小米插线板</span>
+        <p>&gt;</p>
+    </div>
+    <div>
+        <input type="checkbox" value="" name="price"> <span><strong>+599</strong>元得小米低音炮</span>
+        <p>&gt;</p>
+    </div>
+    <div>
+        <input type="checkbox" value="" name="price"> <span><strong>+199</strong>元得小米电视会员年卡</span>
+        <p>&gt;</p>
+    </div>
+</form>
+<div class="footer">
+    <div>
+        <a href=""><p>共2件 金额：<br> <strong>4898</strong>元</p></a>
+    </div>
+    <div><a href="category.html"><p>继续购物</p></a></div>
+    <div><a href="用户结算.html"><p>去结算</p></a></div>
+</div>
+</body>
+</html>
+<script>
+    $(function(){
+        function fullwidth(){
+            if($('body').width() >= 720){
+                $('html').css('font-size', 100 + 'px');
+                return;
+            }
+            var scale = $('body').width() / 720;
+            $('html').css('font-size',scale * 100 + 'px');
+        }
+        fullwidth();
+        $(window).resize(function(){
+            fullwidth();
+        })
+    });
+</script>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/user.css">
+    <script src="jquery-2.2.3.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <div class="header">
+        <div class="left">
+            <a href="">
+                <img src="images/icon_back_n.png" alt="">
+            </a>
+        </div>
+        <p>个人中心</p>
+        <div class="right">
+            <a href="">
+                <img src="images/search.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="bg"></div>
+        <div class="img"><img src="images/default.png"></div>
+        <div class="new-nav">
+            <div>
+                <div class="spr2"></div>
+                <p>全部订单</p>
+                <div class="line-1"></div>
+            </div>
+            <div>
+                <div class="spr2"></div>
+                <p>代付款</p>
+                <div class="line-2"></div>
+            </div>
+            <div>
+                <div class="spr2"></div>
+                <p>待收货</p>
+                <div class="line-3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="list">
+        <p><strong class="spr2"></strong><span>我的优惠</span></p>
+        <p><strong class="spr2"></strong><span>F码通道</span></p>
+        <p><strong class="spr2"></strong><span>我的服务</span></p>
+        <p><strong class="spr2"></strong><span>设置</span></p>
+    </div>
+    <div class="footer">
+        <ul>
+                <li>
+                    <a href="../首页/首页.html">
+                        <div class="sc-spr"></div>
+                        <p>商城</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="fl-spr"></div>
+                        <p>分类</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="gw-spr"></div>
+
+                        <p>购物车</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="fw-spr"></div>
+                        <p>服务</p>
+                    </a>
+                </li>
+            </ul>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    $(function(){
+        function fullwidth(){
+            if($('body').width() >= 720){
+                $('html').css('font-size', 100 + 'px');
+                return;
+            }
+            var scale = $('body').width() / 720;
+            $('html').css('font-size',scale * 100 + 'px');
+        }
+        fullwidth();
+        $(window).resize(function(){
+            fullwidth();
+        })
+    });
+</script>

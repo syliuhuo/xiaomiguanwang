@@ -1,0 +1,194 @@
+* {
+    box-sizing:border-box;
+}
+html,body,h1,h2,h3,h4,p,ul,li,input {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:14px;
+}
+a {
+    text-decoration:none;
+    color:#666;
+    display:block;
+}
+.clr {
+    clear:both;
+}
+.wrapper {
+    background: #F5F5F5;
+}
+.header {
+    height:0.85rem;
+    background:rgb(242,242,242);
+    border-bottom: 1px solid #eee;
+    padding:0.2rem;
+    text-align: center;
+}
+.header .left {
+
+    float:left;
+}
+
+.header .left img{
+    width:0.44rem;
+    height:0.44rem;
+}
+.header .right {
+    float:right;
+}
+.header .right a {
+    margin-left:0.2rem;
+}
+.header .right img {
+    width:0.44rem;
+    height:0.44rem;
+}
+.header p {
+    display:inline-block;
+    font-size:0.3rem;
+    font-weight:400;
+    color:#666;
+    line-height:0.44rem;
+    vertical-align: middle;
+    padding-left:0.2rem;
+}
+.banner .bg {
+    width:100%;
+    height:1.8rem;
+    background:#FF6B00;
+}
+.img img {
+    width:1.4rem;
+    height:1.4rem;
+}
+.img {
+    width:1.44rem;
+    height:1.44rem;
+    margin:-1.18rem auto 0.45rem;
+    border:2px solid #fff;
+    border-radius:50%;
+}
+.new-nav {
+    display:flex;
+    width:100%;
+    text-align: center;
+    padding:0.2rem 0.2rem 0.4rem 0.2rem;
+}
+.new-nav > div {
+    flex:1;
+    border-right:1px solid #eee;
+}
+.new-nav > div > .spr2 {
+    width:0.6rem;
+    height:0.6rem;
+    background:url(../images/spr2.png);
+    background-size:0.6rem 3.4rem;
+    margin:0 auto;
+ }
+.new-nav > div:nth-of-type(2) > .spr2 {
+    background-position-y:-1.2rem;
+}
+.new-nav > div:nth-of-type(3) > .spr2 {
+    background-position-y:-0.6rem;
+}
+.new-nav > div > p {
+    font-size: 0.26rem;
+    margin-top:0.16rem;
+}
+.new-nav > div > div:nth-of-type(2) {
+    width:0.52rem;
+    margin:24px auto 0;
+}
+.new-nav .line-1 {
+    border:1px solid #E33F7B;
+}
+.new-nav .line-2 {
+    border:1px solid #8BC34A;
+}
+.new-nav .line-3 {
+    border:1px solid #FA0;
+}
+.list {
+    background: #F5F5F5;
+    padding-top:0.3rem;
+    padding-bottom: 0.9rem;
+}
+.list p {
+    font-size: 0.26rem;
+    color: #333;
+    background: white;
+    display: flex;
+    align-items: center;
+    height: 0.8rem;
+    border-bottom: 1px solid #eee;
+}
+.list p strong {
+    display:inline-block;
+    width:0.4rem;
+    height:0.4rem;
+    margin:0 0.2rem 0 0.3rem;
+    background: url(../images/spr2.png);
+    background-size: 0.6rem 3.4rem;
+    background-position-y: -2.2rem;
+}
+.list p:nth-child(2) {
+    margin-bottom: 0.3rem;
+}
+.list p:nth-child(2) strong {
+    background-position-y: -2.6rem;
+}
+.list p:nth-child(3) {
+    margin-bottom: 0.3rem;
+}
+.list p:nth-child(3) strong {
+    background-position-y: -1.8rem;
+}
+.list p:nth-child(4) strong {
+    background-position-y: -3rem;
+}
+
+
+
+.footer ul {
+    display:flex;
+    text-align:center;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    background: #FFF;
+    z-index: 99;
+    border-top: 1px solid #e0e0e0;
+}
+.footer ul li {
+    flex:1;
+    list-style:none;
+}
+.footer ul li p {
+    font-size:0.22rem;
+    line-height:0.8;
+}
+.footer ul li a {
+    display:block;
+    padding:0.12rem 0;
+}
+.footer ul li a div {
+    width:0.4rem;
+    height:0.4rem;
+    margin:0 auto 0.08rem;
+    background-image:url(../images/spr1.png);
+    background-size:0.4rem 3.2rem;
+}
+.footer ul li a .sc-spr {
+    background-position-y: -2.8rem;
+}
+.footer ul li a .fl-spr {
+    background-position-y: -0.4rem;
+}
+.footer ul li a .gw-spr {
+    background-position-y: -1.2rem;
+}
+.footer ul li a .fw-spr {
+    background-position-y: -1.6rem;
+}

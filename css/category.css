@@ -1,0 +1,124 @@
+* {
+    box-sizing:border-box;
+}
+html,body,h1,h2,h3,h4,p,ul,li {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:14px;
+}
+a {
+    text-decoration:none;
+    color:#666;
+}
+.clr {
+    clear:both;
+}
+.header {
+    height:0.85rem;
+    background:rgb(242,242,242);
+    border-bottom: 1px solid #eee;
+    padding:0.2rem;
+    text-align: center;
+}
+.header .left {
+
+    float:left;
+}
+.header .left img{
+    width:0.44rem;
+    height:0.44rem;
+}
+.header .right {
+
+    float:right;
+}
+.header .right img {
+    width:0.44rem;
+    height:0.44rem;
+}
+.header p {
+    display:inline-block;
+    font-size:0.3rem;
+    font-weight:400;
+    color:#666;
+}
+.list {
+    background: #F5F5F5;
+    padding:0.2rem 0.2rem 1.2rem;
+}
+.list section {
+    background: white;
+    margin-bottom: 0.2rem;
+}
+.list section:nth-last-child(1) {
+    margin:0;
+}
+.list section h2 {
+    padding:0.5rem 0 0.6rem;
+    font-size:0.3rem;
+    text-align:center;
+    font-weight:400;
+    color:#333;
+    background: white;
+}
+.list section ul {
+    padding:0 0.25rem;
+}
+.list section li {
+    list-style: none;
+    float:left;
+    width:25%;
+    text-align: center;
+    margin-bottom:0.4rem;
+}
+.list section ul li img {
+    width:1rem;
+    height:1rem;
+}
+.list section ul li p {
+    font-size:0.22rem;
+    padding-top:0.28rem;
+}
+.footer ul {
+    display:flex;
+    text-align:center;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    background: #FFF;
+    z-index: 99;
+    border-top: 1px solid #e0e0e0;
+}
+.footer ul li {
+    flex:1;
+    list-style:none;
+}
+.footer ul li p {
+    font-size:0.22rem;
+    line-height:0.8;
+}
+.footer ul li a {
+    display:block;
+    padding:0.12rem 0;
+}
+.footer ul li a div {
+    width:0.4rem;
+    height:0.4rem;
+    margin:0 auto 0.08rem;
+    background-image:url(../images/spr1.png);
+    background-size:0.4rem 3.2rem;
+}
+.footer ul li a .sc-spr {
+    background-position-y: -2.8rem;
+}
+.footer ul li a .fl-spr {
+    background-position-y: 0rem;
+}
+.footer ul li a .gw-spr {
+    background-position-y: -1.2rem;
+}
+.footer ul li a .fw-spr {
+    background-position-y: -2rem;
+}

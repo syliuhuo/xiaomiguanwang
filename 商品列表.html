@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/list.css">
+    <script src="jquery-2.2.3.js"></script>
+    <title>list</title>
+</head>
+<body>
+<div id="wrapper">
+    <div class="header">
+        <div class="left">
+            <img src="images/icon_back_n.png" alt="">
+        </div>
+        <h2>商品列表</h2>
+        <div class="search">
+            <a href="search.html"><img src="images/search.png" alt=""></a>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="images/L-1.jpg" alt="">
+    </div>
+    <div class="list">
+        <ol>
+            <li>
+                <a href="">
+                    <img src="images/L-2.jpg" alt="">
+                    <div>
+                    <P>小米手机5 标准版 3GB + 32GB / 3D玻璃</P>
+                    <p><strong>1999</strong>元</p>
+                    </div>
+                </a>
+            </li>
+            <li><a href="">
+                    <img src="images/L-3.jpg" alt="">
+                <div>
+                    <P>小米手机5 标准版 3GB + 32GB / 3D玻璃</P>
+                    <p><strong>2299</strong>元</p>
+                </div>
+            </a></li>
+            <li>
+                <a href="">
+                    <img src="images/L-4.jpg" alt="">
+                    <div>
+                    <P>小米手机5 尊享版 4GB + 128GB / 3D玻璃</P>
+                    <p><strong>2599</strong>元</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/L-5.jpg" alt="">
+                    <div>
+                    <P>小米手机5 尊享版 4GB + 128GB / 3D陶瓷</P>
+                    <p><strong>2699</strong>元</p>
+                    </div>
+                </a>
+            </li>
+        </ol>
+    </div>
+    <div class="footer">
+        <ul>
+            <li>
+                <a href="首页.html">
+                    <div class="sc-spr"></div>
+                    <p>商城</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="fl-spr"></div>
+                    <p>分类</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="gw-spr"></div>
+                    <p>购物车</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="fw-spr"></div>
+                    <p>服务</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    $(function(){
+        function fullwidth(){
+            if($('body').width() >= 720){
+                $('html').css('font-size', 100 + 'px');
+                return;
+            }
+            var scale = $('body').width() / 720;
+            $('html').css('font-size',scale * 100 + 'px');
+        }
+        fullwidth();
+        $(window).resize(function(){
+            fullwidth();
+        })
+    });
+</script>

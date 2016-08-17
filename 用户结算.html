@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/checkout.css">
+    <script src="jquery-2.2.3.js"></script>
+    <title>list</title>
+</head>
+<body>
+<div id="wrapper">
+    <div class="header">
+        <div class="left">
+            <img src="images/icon_back_n.png" alt="">
+        </div>
+        <h2>用户结算</h2>
+        <div class="search">
+            <a href="search.html"><img src="images/search.png" alt=""></a>
+        </div>
+    </div>
+    <div class="list">
+        <div class="add">
+            <a href="">
+                <p>添加收货地址<span>&gt;</span></p>
+            </a>
+        </div>
+        <form action="">
+        <ul>
+            <li>
+                <p>支付宝<input type="radio" name="li" value="main"></p>
+            </li>
+            <li>
+                <p>小米钱包<input type="radio" name="li" value="main"></p>
+            </li>
+            <li>
+                <p>银联在线支付 <input type="radio" name="li" value="main"></p>
+            </li>
+        </ul>
+        </form>
+        <p>发票类型<span>个人发票&nbsp;&gt;</span></p>
+        <p>送货时间<span>不限送货时间&nbsp;&gt;</span></p>
+        <p>我有优惠券码</p>
+        <div class="sp">
+            <img src="images/M-1.png" alt="">
+            <p>小米电视3 70英寸</p>
+            <p>9990元</p>
+        </div>
+        <div class="mu">
+            <p>商品价格：9999元</p>
+            <p>配送费用：300元</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>共1件 合计：<strong>10299</strong>元</p>
+        <p><a href="">去付款</a></p>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    $(function(){
+        function fullwidth(){
+            if($('body').width() >= 720){
+                $('html').css('font-size', 100 + 'px');
+                return;
+            }
+            var scale = $('body').width() / 720;
+            $('html').css('font-size',scale * 100 + 'px');
+        }
+        fullwidth();
+        $(window).resize(function(){
+            fullwidth();
+        })
+    });
+</script>

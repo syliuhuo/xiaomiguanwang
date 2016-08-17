@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="base.css">
+    <script src="jquery-2.2.3.js"></script>
+    <title>首页</title>
+</head>
+<body>
+<div id="wrapper">
+    <div class="page-index" id="home" data-log="首页">
+        <div class="download-app">
+            <a href="download.html">
+                <img src="images/ios.png" alt="" style="width:100%;">
+            </a>
+            <div class="close">
+                <a href="#">
+                    <img src="images/top-x.png">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="index-header">
+        <a href="search.html">
+            <span><img src="images/search.png"></span><span>搜素商品名称</span>
+        </a>
+        <div class="search-bottom"></div>
+    </div>
+    <div class="banner">
+        <a href=""><img src="images/T1.jpg" alt=""></a>
+    </div>
+    <div class="list-width">
+        <div class="section">
+            <div class="items">
+                <a href="商品列表.html"><img src="images/T1-1.jpg" alt=""></a>
+            </div>
+            <div class="items">
+                <a href="商品列表.html"><img src="images/T1-2.jpg" alt=""></a>
+            </div>
+            <div class="items">
+                <a href="商品列表.html"><img src="images/T1-3.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="list">
+        <div class="section">
+            <div class="img">
+                <img src="images/T1-4.jpg" alt="">
+            </div>
+            <div class="info">
+                <h2>小米手机5</h2>
+                <p>骁龙820处理器 / 4GB 内存 / 128GB 闪存 / 4轴防抖相机 / 3D陶瓷机身</p>
+                <p><strong>1999元 起</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="list">
+        <div class="section">
+            <div class="img">
+                <img src="images/T1-4.jpg" alt="">
+            </div>
+            <div class="info">
+                <h2>小米手机5</h2>
+                <p>骁龙820处理器 / 4GB 内存 / 128GB 闪存 / 4轴防抖相机 / 3D陶瓷机身</p>
+                <p><strong>1999元 起</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="list">
+        <div class="section">
+            <div class="img">
+                <img src="images/T1-4.jpg" alt="">
+            </div>
+            <div class="info">
+                <h2>小米手机5</h2>
+                <p>骁龙820处理器 / 4GB 内存 / 128GB 闪存 / 4轴防抖相机 / 3D陶瓷机身</p>
+                <p><strong>1999元 起</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="list">
+        <div class="section">
+            <div class="img">
+                <img src="images/T1-4.jpg" alt="">
+            </div>
+            <div class="info">
+                <h2>小米手机5</h2>
+                <p>骁龙820处理器 / 4GB 内存 / 128GB 闪存 / 4轴防抖相机 / 3D陶瓷机身</p>
+                <p><strong>1999元 起</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="list">
+        <div class="section">
+            <div class="img">
+                <img src="images/T1-4.jpg" alt="">
+            </div>
+            <div class="info">
+                <h2>小米手机5</h2>
+                <p>骁龙820处理器 / 4GB 内存 / 128GB 闪存 / 4轴防抖相机 / 3D陶瓷机身</p>
+                <p><strong>1999元 起</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="list">
+        <div class="section">
+            <div class="img">
+                <img src="images/T1-4.jpg" alt="">
+            </div>
+            <div class="info">
+                <h2>小米手机5</h2>
+                <p>骁龙820处理器/4GB内存/128GB闪存/4轴防抖相机/3D陶瓷机身</p>
+                <p><strong>1999元 起</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="list" style="margin-bottom: 0.9rem;">
+        <div class="section">
+            <div class="img">
+                <img src="images/T1-4.jpg" alt="">
+            </div>
+            <div class="info">
+                <h2>小米手机5</h2>
+                <p>骁龙820处理器 / 4GB 内存 / 128GB 闪存 / 4轴防抖相机 / 3D陶瓷机身</p>
+                <p><strong>1999元 起</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li>
+                <a href="#">
+                    <div class="sc-spr"></div>
+                    <p>商城</p>
+                </a>
+            </li>
+            <li>
+                <a href="category.html">
+                    <div class="fl-spr"></div>
+                    <p>分类</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="gw-spr"></div>
+
+                    <p>购物车</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="fw-spr"></div>
+                    <p>服务</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    $(function(){
+        function fullwidth(){
+            if($('body').width() >= 720){
+                $('html').css('font-size', 100 + 'px');
+                return;
+            }
+            var scale = $('body').width() / 720;
+            $('html').css('font-size',scale * 100 + 'px');
+        }
+        fullwidth();
+        $(window).resize(function(){
+            fullwidth();
+        })
+    });
+</script>
